@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+
+    <!-- Сначала нормализатор ))-->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+    
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    
+      <!--Header-->
+      <header class="header">
+        <div class="container header-container">
+          <nav class="header-nav">
+            <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
+            <ul class="header-link">
+              <li class="item"><a class="studio-link" href="./index.html">Студія</a></li>
+              <li class="item"><a class="portfolio-current" href="./portfolio.html">Портфоліо</a></li>
+              <li class="item"><a class="contacts" href="./contacts.html">Контакти</a></li>
+            </ul>
+          </nav>
+  
+          <ul class="header-contacts list">
+            <li class="item icon-mail">
+              
+              <a class="header-contact" href="mailto:info@devstudio.com">
+                <svg class="icon-mail" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope">
+                </use>
+              </svg>info@devstudio.com</a>
+            </li>
+            <li class="item icon-tel">
+              
+              <a class="header-contact" href="tel:+380961111111">
+                <svg class="icon-tel" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone">
+                </use>
+              </svg>+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+
+    <main>
+      <!--Продукты-->
+      <section class="section">
+        <div class="container">
+          <ul class="products list">
+            <li class="item">
+              <button class="products-all" type="button">Усі</button>
+            </li>
+
+            <li class="item">
+              <button class="products-website" type="button">Веб-сайти</button>
+             </li>
+
+            <li class="item">
+              <button class="products-app" type="button">Додатки</button>
+            </li>
+
+            <li class="item">
+              <button class="products-design" type="button">Дизайн</button>
+            </li>
+
+            <li class="item">
+              <button class="products-marketing" type="button">Маркетинг</button>
+            </li>    
+          </ul>
+        
+          
+          <ul class="exemplum list">
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                  <img class="img-exemplum" src="./images/tehnockryak.jpg" alt="технокряк" width="370" />
+                  <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+                <div class="card-e-content">
+                 <h2 class="htehnockryak">Технокряк</h2>
+                 <p class="exemplum-website">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+        
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                  <img class="img-exemplum" src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+                  <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>  
+                <div class="card-e-content">
+                  <h2 class="hposter">Постер New Orlean vs Golden Star</h2>
+                  <p class="exemplum-design">Дизайн</p>
+                </div>
+              </a>
+            </li>
+          
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                  <img class="img-exemplum" src="./images/restaurant.jpg" alt="Ресторан Seafood" width="370" />
+                  <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+                <div class="card-e-content">
+                  <h2 class="hrestaurant">Ресторан Seafood</h2>
+                  <p class="exemplum-app">Додаток</p>
+                </div>
+              </a>
+            </li>
+          
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                  <img class="img-exemplum" src="./images/prime.jpg" alt="Prime" width="370" />
+                  <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+                <div class="card-e-content">
+                  <h2 class="hprime">Проєкт Prime</h2>
+                  <p class="exemplum-marketing">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+          
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                  <img class="img-exemplum" src="./images/boxes.jpg" alt="Boxes" width="370" />
+                  <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+                <div class="card-e-content">
+                  <h2 class="hboxes">Проєкт Boxes</h2>
+                  <p class="exemplum-app">Додаток</p>
+                </div>
+            </a>
+            </li>
+              
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                      <img class="img-exemplum"
+                      src="./images/inspiration.jpg"
+                      alt="Inspiration has no Borders"
+                      width="370" />
+                      <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                        відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+                <div class="card-e-content">
+                  <h2 class="hinspiration">Inspiration has no Borders</h2>
+                  <p class="exemplum-website">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+              
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                      <img class="img-exemplum"
+                      src="./images/limited.jpg"
+                      alt="Издание Limited Edition"
+                      width="370" />
+                      <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                        відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+                <div class="card-e-content">
+                  <h2 class="hlimited">Видання Limited Edition</h2>
+                  <p class="exemplum-design">Дизайн</p>
+                </div>
+              </a>
+            </li>
+              
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                  <img class="img-exemplum" src="./images/lab.jpg" alt="Проект LAB" width="370" />
+                  <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+                <div class="card-e-content">
+                  <h2 class="hlab">Проєкт LAB</h2>
+                  <p class="exemplum-marketing">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+              
+            <li class="item-exemplum">
+              <a class="exemplum-card" href="">
+                <div class="exemplum-overlay">
+                      <img class="img-exemplum"
+                      src="./images/growing.jpg"
+                      alt="Growing Business"
+                      width="370" />
+                      <p class="exemplum-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                        відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+                <div class="card-e-content">
+                    <h2 class="hgrowing">Growing Business</h2>
+                    <p class="exemplum-app">Додаток</p>
+                </div>
+              </a>
+            </li>
+            
+          </ul>
+     
+        </div>
+    
+      </section>
+    
+    </main>
+
+    <!--Футер-->
+    <footer class="footer">
+      <div class="container">
+    
+        <div class="invite">
+    
+          <div class="footer-contacts">
+    
+            <a href="./index.html" class="footer-logo">
+              <span class="web">Web</span><span class="footer-logo-studio">Studio</span>
+            </a>
+    
+            <address class="address">
+              <ul class="address-contacts">
+    
+                <li class="item">
+                  <a class="address-postoffice" href="https://goo.gl/maps/G8YGZfuTaQAcdVtQ8">м. Київ, пр-т Лесі Українки, 26</a>
+                </li>
+    
+                <li class="item">
+                  <a class="address-mail" href="mailto:info@example.com">info@example.com</a>
+                </li>
+    
+                <li class="item">
+                  <a class="address-tel" href="tel:+380991111111">+38 0991111111</a>
+                </li>
+    
+              </ul>
+            </address>
+          </div>
+    
+          <div class="footer-calling">
+    
+            <p class="calling">приєднуйтесь</p>
+    
+            <ul class="footer-social list">
+              <li class="item company-social">
+                <a class="icon-company-social" href="">
+                  <svg class="icon-social">
+                    <use href="./images/symbol-defs.svg#icon-instagram">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+    
+              <li class="item company-social">
+                <a class="icon-company-social" href="">
+                  <svg class="icon-social">
+                    <use href="./images/symbol-defs.svg#icon-twitter">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+    
+              <li class="item company-social">
+                <a class="icon-company-social" href="">
+                  <svg class="icon-social">
+                    <use href="./images/symbol-defs.svg#icon-facebook">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+    
+              <li class="item company-social">
+                <a class="icon-company-social" href="">
+                  <svg class="icon-social">
+                    <use href="./images/symbol-defs.svg#icon-linkedin">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+    
+      </div>
+    </footer>
+  </body>
+</html>
