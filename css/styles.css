@@ -36,6 +36,8 @@
   --social-hover-background: #2196f3;
   --footer-logo-studio: #ffffff;
   --footer-background: #2f303a;
+  --footer-submit:#ffffff;
+  --footer-submit-background: #2196f3;
   --address-postoffice: #ffffff;
   --address-mail-tel: rgba(255, 255, 255, 0.6);
   --address-contacts-hover-focus: #2196f3;
@@ -932,7 +934,8 @@ transform: translate(-50%, -50%) scale(0);
 .address-mail,
 .address-tel,
 .footer-contacts,
-.footer-calling {
+.footer-calling,
+.footer-checkin {
   margin: 0;
   padding: 0;
 }
@@ -1025,13 +1028,15 @@ transform: translate(-50%, -50%) scale(0);
   margin-left: 70px;
 }
 
-.calling {
+.calling,
+.checkin {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--footer-logo-studio);
 }
 
-.footer-social {
+.footer-social,
+.checkin-field {
   display: flex;
   margin-top: 20px;
 }
@@ -1061,3 +1066,30 @@ transform: translate(-50%, -50%) scale(0);
 .icon-company-social .icon-social {
   fill: var(--company-icon);
 }
+
+.footer-checkin {
+  display: block;
+  margin-left: auto;
+}
+
+.email {
+  width: 358px;
+  height: 50px;
+  background: var(--footer-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.submit {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  color: var(--footer-submit);
+  border: none;
+  border-radius: 4px;
+  background: var(--footer-submit-background);
+
+}
+
+
+
