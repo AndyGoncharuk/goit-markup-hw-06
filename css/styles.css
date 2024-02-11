@@ -9,16 +9,17 @@
   --header-contact: #757575;
   --header-contact-hover-focus: #2196f3;
   --hero-background: #c4c4c4;
+  --backdrop-background: #00000020;
+  --modal-background: #fff;
+  --close-modal-background: rgba(255, 255, 255, 1);
   --order-service-hover: #188ce8;
   --order-service-focus: #188ce8;
   --order-service: #ffffff;
   --order-service-background: #2196f3;
-  --studio-link: #212121;
-  --portfolio:  #212121;
-  --contacts: #212121;
+  --studio-portfolio-contacts: #212121;
   --studio-link-current: #2196f3;
   --portfolio-current: #2196f3;
-  --contacts: #2196f3;
+  --contacts-current: #2196f3;
   --card-content-background: #ffffff;
   --advantage-text: #757575;
   --products-background: #f5f4fa;
@@ -294,7 +295,7 @@ address {
 .studio-link,
 .portfolio,
 .contacts {
-  color: #212121;
+  color: var(--studio-portfolio-contacts)
 }
 
 .header-contacts {
@@ -342,7 +343,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00000020;
+  background-color: var(--backdrop-background);
   transition: opacity 300ms linear, visibility 300ms linear;
 }
 
@@ -362,7 +363,7 @@ address {
   min-height: 581px;
   /* padding: auto; */
   border-radius: 4px;
-  background-color: #fff;
+  background-color: var(--modal-background);
   transition: transform 300ms linear;
 }
 
@@ -379,12 +380,19 @@ transform: translate(-50%, -50%) scale(0);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  
+  background: var(--close-modal-background);
 }
 
+.icon-close-black {
+  fill: rgba(0, 0, 0, 1);
+}
 
+.close-modal:hover .icon-close-black,
+.close-modal:focus .icon-close-black {
+  fill: rgba(33, 150, 243, 1);
+}
 
 .chapter {
   font-weight: 700;
@@ -946,7 +954,7 @@ transform: translate(-50%, -50%) scale(0);
 }
 
 .invite {
-  display: inline-flex;
+  display: flex;
   align-items: baseline;
 }
 
@@ -1069,27 +1077,35 @@ transform: translate(-50%, -50%) scale(0);
 
 .footer-checkin {
   display: block;
-  margin-left: auto;
+  margin-left: 120px;
 }
 
 .email {
   width: 358px;
   height: 50px;
+  padding-left: 15px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
   background: var(--footer-background);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 
 .submit {
+  display: inline-flex;
   width: 200px;
   height: 50px;
+  margin-left: 12px;
   font-size: 16px;
   color: var(--footer-submit);
   border: none;
   border-radius: 4px;
   background: var(--footer-submit-background);
-
 }
 
+.icon-send {
+  width: 24px;
+  height: 24px;
+}
 
 
